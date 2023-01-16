@@ -13,7 +13,7 @@ as a reverse proxy.
 2. In Node-RED open the Google Smarthome management Node and set the port to 13001 (to free up port 3001 for Caddy).
    Also enable the checkbox "Use external SSL offload". Then save and deploy. DON'T forward port 13001 on your home
    router.
-3. Check if the new port is reachable by opening https://192.168.0.100:13001/ in your browser (assuming 192.168.0.100 is
+3. Check if the new port is reachable by opening http://192.168.0.100:13001/check in your browser (assuming 192.168.0.100 is
    the host where Node-RED and Caddy are running). You should see the Google Smarthome test page.
 4. Install Caddy (on Ubuntu it's `apt-get install caddy`).
 5. Edit Caddy's config file (on Ubuntu it is located in `/etc/caddy/Caddyfile`)
